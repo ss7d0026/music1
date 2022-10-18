@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ylz.mapper.UsersMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.ylz.pojo.Users">
+        <id column="id" property="id" />
+        <result column="user" property="user" />
+        <result column="balance" property="balance" />
+        <result column="member" property="member" />
+        <result column="time" property="time" />
+        <result column="Promotion" property="Promotion" />
+        <result column="namen" property="namen" />
+        <result column="namex" property="namex" />
+        <result column="email" property="email" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, user, balance, member, time, Promotion, namen, namex, email
+    </sql>
+
+</mapper>
